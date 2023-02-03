@@ -19,14 +19,14 @@ public class Demo {
 				
 		list.stream().sorted(Comparator.comparing(Employee::getSalary)
 						.reversed()).findFirst()
-						.ifPresent(x -> System.out.println("Solution - 1: "+ x.getSalary()));
+						.ifPresent(x -> System.out.println(x.getSalary()));
 		
 		Optional<Employee> res = list.stream().sorted(Comparator.comparingDouble(Employee::getSalary)
 							.reversed()).findFirst();
-		System.out.println("Solution - 2: "+ res.get().getSalary());
+		System.out.println(res.get().getSalary());
 
 		Optional<Double> resp = list.stream().map(Employee::getSalary).sorted(Comparator.reverseOrder()).findFirst();
-		System.out.println("Solution - 3: "+ resp.get());
+		System.out.println(resp.get());
 	}
 
 }
