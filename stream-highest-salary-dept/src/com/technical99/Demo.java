@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
-public class Demo {
+public class Demo { 
 
 	public static void main(String[] args) {
 		Employee e1 = new Employee(101, "Tarique Anwer", 34, "Development", 5000.0);
